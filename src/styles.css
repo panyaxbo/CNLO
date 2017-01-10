@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+
+.cnlo {
+    font-family: "Thonburi";
+}
+
+md-sidenav {
+  width: 300px;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-content {
+/**  padding: 20px;*/
+ color: #222222;
+}
+
+.app-content md-card {
+  margin: 20px;
+}
+
+.app-content md-checkbox {
+  margin: 10px;
+}
+md-sidenav-layout {
+    background-color: #fafafa;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.lesson-topic {
+  margin-left: 1em;
+}
+.lesson-content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lesson-footer {
+  margin-top: 1em;
+}
+
+/* Start Class Style for button **/
+.md-raised-button .btn-success {
+  color: rgba(255,255,255,.87);
+  background-color: seagreen;
+}
+
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+/* End Class Style for button **/

@@ -1,0 +1,32 @@
+<div class="cnlo app-content" >
+  <md-sidenav-layout>
+      <md-sidenav #sidenav mode="side" class="app-sidenav">
+        <app-leftside></app-leftside>
+      </md-sidenav>
+      
+      <div class="cnlo-app-content">
+        <md-toolbar color="primary">
+          <div class="align-left">
+            <button md-button (click)="sidenav.toggle()" mdTooltip="Select Lesson!"> 
+              <i class="material-icons app-toolbar-menu">menu</i>
+            </button>
+          </div>
+          <div class="align-center">
+            Chinese Learning Online with us (中文在线学习)
+            <span class="app-toolbar-filler"></span>
+          </div>
+          <div class="align-right">
+            <button md-button [routerLink]="['']" mdTooltip="Home" class=""> 
+              <i class="material-icons app-toolbar-menu">home</i>
+            </button>
+          </div>
+          
+        </md-toolbar>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+      </div>
+  </md-sidenav-layout>
+  <span class="app-action">
+    <button md-fab><md-icon>check circle</md-icon></button>
+  </span>
+</div>

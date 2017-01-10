@@ -1,0 +1,45 @@
+<h2 class="lesson-topic">Lesson 2 โทนเสียง 4 เสียง (4 Tones)</h2>
+<md-card>
+  
+  <md-tab-group>
+    <md-tab label="General">
+      <div class="lesson-content">
+        你好? (Nǐ hǎo?) - How are you? 
+        <audio id="wo3">
+            <source src="wo3.mp3" />
+        </audio>
+        <button md-button (click)="PlayNi3hao3()"><i class="material-icons">volume_up</i></button> <br>
+        好 (Hǎo) - Good <button md-button (click)="PlayNi3hao3()"><i class="material-icons">volume_up</i></button> <br>
+        你好吗？(Nǐ hǎo ma?) - How are you ? <button md-button (click)="PlayNi3hao3()"><i class="material-icons">volume_up</i></button><br>
+        我很好 (Wǒ hěn hǎo) - I'm very good <button md-button (click)="PlayNi3hao3()"><i class="material-icons">volume_up</i></button>
+      </div>
+    </md-tab>
+    <md-tab label="Vocabulary">
+      <md-card>
+        <md-list class="app-list">
+          <md-list-item >
+            <h3 md-line>我 (Wǒ) - I</h3>
+            <img src="./app/lesson002/wo3.gif" alt="">
+          </md-list-item>
+          <md-list-item >
+            <h3 md-line>你 (Nǐ) - You</h3>
+            <img src="./app/lesson002/ni3.gif" alt="">
+          </md-list-item>
+        </md-list>
+      </md-card>
+    </md-tab>
+  </md-tab-group>
+
+  <div class="lesson-footer align-center">
+    <button md-raised-button [routerLink]="['/lesson001']" color="accent" >
+      <i class="material-icons">keyboard_arrow_left</i>Lesson 1
+    </button>
+    <button md-raised-button [routerLink]="['/']" class="btn-success" >
+      <i class="material-icons">home</i>
+    </button>
+    <button md-raised-button [routerLink]="['/lesson003']" color="primary" >
+      <i class="material-icons">keyboard_arrow_right</i>Lesson 3
+    </button>
+  </div>
+  
+</md-card>
